@@ -48,9 +48,9 @@
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
 // Get the data
-    var pathToCsv = "boardgame_ratings.csv";
+    var pathToCsv = "DATA/boardgame_ratings.csv";
 
-    var dataset = d3.csv("boardgame_ratings.csv")
+    var dataset = d3.csv("DATA/boardgame_ratings.csv")
     dataset.then(function (data) 
         {        
             var slices = data.columns.slice(1).map(function(id) 
